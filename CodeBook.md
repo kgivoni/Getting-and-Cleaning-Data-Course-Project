@@ -1,17 +1,17 @@
 
-The CleaningDataProject.csv file code book:
+#The CleaningDataProject.csv file code book:
 
-subjectId: there were total of 30 subjects going through the experiment.
++ subjectId: there were total of 30 subjects going through the experiment.
 
-activityId: there were 6 activities, 1-6, where:
-  1 WALKING
-  2 WALKING_UPSTAIRS
-  3 WALKING_DOWNSTAIRS
-  4 SITTING
-  5 STANDING
-  6 LAYING
++ activityId: there were 6 activities, 1-6, where:
+  * 1 WALKING
+  * 2 WALKING_UPSTAIRS
+  * 3 WALKING_DOWNSTAIRS
+  * 4 SITTING
+  * 5 STANDING
+  * 6 LAYING
   
-measurements (populated by mean value, over the tests and trainings):
++ measurements (populated by mean value, over the tests and trainings):
 tBodyAcc-mean()-X
 tBodyAcc-mean()-Y
 tBodyAcc-mean()-Z
@@ -575,8 +575,8 @@ angle(Y,gravityMean)
 angle(Z,gravityMean)
 --------------------------------------
 
-Work done:
-~~~~~~~~~
+# Work done:
+# ~~~~~~~~~~~
 1. Merged the training and the test sets to create one data set.
 2. Extracted only the measurements on the mean and standard deviation for each measurement.
 3. Used descriptive activity names to name the activities in the data set
