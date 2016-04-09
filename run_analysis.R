@@ -92,8 +92,7 @@ library(plyr)
 # summarize the data
 sum_data = ddply(narrow_data, c("subjectId", "activityId"), numcolwise(mean))
 
-x <- 5
-y < 6
+write.table(sum_data, file="CleaningDataProject.csv", sep="," , row.names=FALSE)
 
 # ignore ....mean_data <- dcast(narrow_data, activityId ~ subjectId, mean)
 #  ignore ....group_data <- group_by(narrow_data, activityId, subjectId)
