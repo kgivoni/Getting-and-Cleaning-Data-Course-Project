@@ -7,6 +7,5 @@ as defined at: https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-a
 Directory includes:
 ~~~~~~~~~~~~~~~~~~~
 1. run_analysis.r script, to run data fetching and cleaning. 
-    The file direcotry path needs to be modified in order to run on a different machine.
 
 2. Code book to describes the variables
