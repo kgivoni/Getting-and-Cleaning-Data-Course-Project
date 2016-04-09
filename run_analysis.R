@@ -10,31 +10,30 @@
 
 #unlink(remote_zip_url)
 
-#setwd("/Users/kinneretgivoni/Downloads/proj3/UCI HAR Dataset")
 
 ## --------------
 ## read the data
 ## --------------
 ## general
-activity_labels1 <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/activity_labels.txt", header = FALSE)
-features <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/features.txt", header = FALSE)
+activity_labels <- read.table("./activity_labels.txt", header = FALSE)
+features <- read.table("./features.txt", header = FALSE)
 
 
 ## ----------------
 ## read train data
 ## ----------------
 
-subject_train <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/train/subject_train.txt", header = FALSE)
-X_train <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/train/X_train.txt", header=FALSE)
-y_train <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/train/y_train.txt", header=FALSE)
+subject_train <- read.table("./train/subject_train.txt", header = FALSE)
+X_train <- read.table("./train/X_train.txt", header=FALSE)
+y_train <- read.table("./train/y_train.txt", header=FALSE)
 
 ## ----------------
 ## read test data
 ## ----------------
 
-subject_test <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/test/subject_test.txt", header = FALSE)
-X_test <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/test/X_test.txt", header=FALSE)
-y_test <- read.table("/Users/kinneretgivoni/Downloads/proj3/UCI_HAR_Dataset/test/y_test.txt", header=FALSE)
+subject_test <- read.table("./test/subject_test.txt", header = FALSE)
+X_test <- read.table("./test/X_test.txt", header=FALSE)
+y_test <- read.table("./test/y_test.txt", header=FALSE)
 
 ## ------------------------------------------------------------------------
 ## Step 1: Merges the training and the test sets to create one data set.
@@ -93,6 +92,7 @@ library(plyr)
 sum_data = ddply(narrow_data, c("subjectId", "activityId"), numcolwise(mean))
 
 write.table(sum_data, file="CleaningDataProject.csv", sep="," , row.names=FALSE)
+
 
 # ignore ....mean_data <- dcast(narrow_data, activityId ~ subjectId, mean)
 #  ignore ....group_data <- group_by(narrow_data, activityId, subjectId)
