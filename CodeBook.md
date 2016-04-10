@@ -5,7 +5,7 @@ This Code book includes:
 1. the columns of the final data file.
 2. The steps taken in order to prepare the data file.
 
-<h2> Data File Columns </h2>
+<h2> Data File Columns: </h2>
 + subjectId: there were total of 30 subjects going through the experiment.
 
 + activityId: there were 6 activities, 1-6, where:
@@ -582,7 +582,7 @@ angle(Z,gravityMean)
 
 --------------------------------------
 
-<h2> Data File Columns </h2>
+<h2> Steps taken: </h2>
 0. Downloaded and unzipped data files from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
    All data read into R tables, including the training and test's results.
 1. Merged the training and the test sets to create one data set.
