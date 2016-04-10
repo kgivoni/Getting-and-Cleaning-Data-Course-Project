@@ -1,6 +1,11 @@
 
 #The CleaningDataProject.csv file code book:
 
+This Code book includes:
+1. the columns of the final data file.
+2. The steps taken in order to prepare the data file.
+
+<h2> Data File Columns </h2>
 + subjectId: there were total of 30 subjects going through the experiment.
 
 + activityId: there were 6 activities, 1-6, where:
@@ -573,12 +578,15 @@ angle(tBodyGyroJerkMean,gravityMean)
 angle(X,gravityMean)
 angle(Y,gravityMean)
 angle(Z,gravityMean)
+
+
 --------------------------------------
 
-# Work done:
-# ~~~~~~~~~~~
+<h2> Data File Columns </h2>
+0. Downloaded and unzipped data files from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+   All data read into R tables, including the training and test's results.
 1. Merged the training and the test sets to create one data set.
-2. Extracted only the measurements on the mean and standard deviation for each measurement.
+2. Extracted only the measurements on the mean and standard deviation for each measurement (all other columns were dropped).
 3. Used descriptive activity names to name the activities in the data set
 4. Appropriately labeled the data set with descriptive variable names.
 5. created a second, independent tidy data set with the average of each variable for each activity and each subject.
